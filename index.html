@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  TO GO LIVE FOR FREE:
+  1. Go to vercel.com and sign up free
+  2. Drag and drop this entire project folder
+  3. Site is live instantly at yourname.vercel.app
+  4. For contact form: go to formspree.io, create free account,
+     create a new form, copy your Form ID and replace
+     YOUR_FORM_ID in contact.html
+  ============================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Gulzar Construction | Premium Construction, Renovation & Fit-Outs in Australia</title>
+  <meta name="description" content="Gulzar Construction is an Australian-owned construction company delivering premium carpentry, construction, renovation, and fit-out services. Get a free quote today." />
+  <meta name="keywords" content="construction Australia, Australian builders, carpentry, renovation, fit-outs, Gulzar Construction, commercial construction, residential renovation" />
+  <meta name="author" content="Gulzar Construction" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gulzar Construction | Building Australia's Future" />
+  <meta property="og:description" content="Premium Construction, Renovation & Fit-Out Services Across Australia. Licensed, insured, Australian owned." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/style.css?v=9" />
+  <link rel="stylesheet" href="css/animations.css?v=9" />
+</head>
+
+<body>
+
+  <!-- ============================ NAVBAR ============================ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Gulzar Construction home">
+        <img src="images/logo.png?v=10" alt="Gulzar Construction logo" class="logo-img" />
+        <span class="logo-text">
+          <span class="logo-accent">GULZAR</span>
+          <span class="logo-rest">CONSTRUCTION</span>
+        </span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#services" class="nav-link">Services</a>
+        <a href="projects.html" class="nav-link">Our Work</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html" class="nav-cta">Get Free Quote</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-content">
+      <h1>BUILDING <span class="accent">AUSTRALIA'S</span> FUTURE</h1>
+      <p>Premium Construction, Renovation &amp; Fit-Out Services Across Australia</p>
+      <div class="hero-buttons">
+        <a href="projects.html" class="btn btn-outline">View Our Work</a>
+        <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ============================ ABOUT ============================ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <span class="eyebrow">Who We Are</span>
+          <h2>Crafting Quality Spaces Across Australia</h2>
+          <p>
+            Gulzar Construction is a proudly Australian-owned and operated construction
+            company delivering high-quality carpentry, construction, renovation, and fit-out
+            services to homeowners and businesses nationwide. With over a decade of hands-on
+            experience, we combine traditional craftsmanship with modern building practices
+            to bring your vision to life.
+          </p>
+          <p>
+            From precision joinery and bespoke carpentry to full-scale commercial fit-outs and
+            major home renovations, our team is committed to delivering exceptional results on
+            time and on budget — every single project.
+          </p>
+        </div>
+
+        <div class="about-image reveal-right">
+          <img
+            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80"
+            alt="Skilled construction worker on an Australian building site" />
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-grid">
+        <div class="stat-card reveal delay-1">
+          <div class="stat-number" data-target="150" data-suffix="+">0</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-card reveal delay-2">
+          <div class="stat-number" data-target="10" data-suffix="+">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card reveal delay-3">
+          <div class="stat-number" data-target="200" data-suffix="+">0</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-card reveal delay-4">
+          <div class="stat-number" data-target="100" data-suffix="%">0</div>
+          <div class="stat-label">Quality Guaranteed</div>
+        </div>
+      </div>
+
+      <!-- Trust badges -->
+      <div class="trust-badges reveal">
+        <div class="trust-badge"><i class="fas fa-shield-alt"></i> Licensed</div>
+        <div class="trust-badge"><i class="fas fa-file-contract"></i> Insured</div>
+        <div class="trust-badge"><i class="fas fa-flag"></i> Australian Owned</div>
+        <div class="trust-badge"><i class="fas fa-comments-dollar"></i> Free Quotes</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SERVICES ============================ -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">What We Do</span>
+        <h2>Our Services</h2>
+        <p>A full suite of construction services designed for Australian homes and businesses.</p>
+        <div class="divider-bar"></div>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal delay-1">
+          <div class="service-icon"><i class="fas fa-hammer"></i></div>
+          <h3>Carpentry</h3>
+          <p>
+            Expert carpentry from custom joinery and timber framing to bespoke staircases.
+            Precision craftsmanship for residential and commercial projects across Australia.
+          </p>
+          <a href="contact.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="service-card reveal delay-2">
+          <div class="service-icon"><i class="fas fa-hard-hat"></i></div>
+          <h3>Construction</h3>
+          <p>
+            Full-scale residential and commercial construction managed end-to-end. From
+            ground-up new builds to multi-stage developments delivered safely and on schedule.
+          </p>
+          <a href="contact.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="service-card reveal delay-3">
+          <div class="service-icon"><i class="fas fa-paint-roller"></i></div>
+          <h3>Renovation</h3>
+          <p>
+            Kitchens, bathrooms, extensions and full home transformations. We modernise
+            existing spaces while preserving character — adding lasting value to your property.
+          </p>
+          <a href="contact.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="service-card reveal delay-4">
+          <div class="service-icon"><i class="fas fa-store"></i></div>
+          <h3>Fit-Outs</h3>
+          <p>
+            Commercial and retail fit-outs that bring your brand to life. From cafes and
+            offices to retail showrooms — turnkey delivery with minimal disruption.
+          </p>
+          <a href="contact.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FEATURED PROJECTS ============================ -->
+  <section class="section projects-section" id="featured-projects">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Portfolio</span>
+        <h2>Our Recent Work</h2>
+        <p>A snapshot of recent projects delivered across Australia.</p>
+        <div class="divider-bar"></div>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card reveal delay-1">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Modern Sydney home renovation" />
+          <div class="project-overlay">
+            <span class="project-category">Renovation</span>
+            <div class="project-name">Modern Coastal Home</div>
+            <div class="project-location"><i class="fas fa-map-marker-alt"></i> Bondi, NSW</div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-2">
+          <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80" alt="Custom kitchen carpentry" />
+          <div class="project-overlay">
+            <span class="project-category">Carpentry</span>
+            <div class="project-name">Bespoke Kitchen Joinery</div>
+            <div class="project-location"><i class="fas fa-map-marker-alt"></i> Melbourne, VIC</div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-3">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Commercial construction site" />
+          <div class="project-overlay">
+            <span class="project-category">Construction</span>
+            <div class="project-name">Mixed-Use Development</div>
+            <div class="project-location"><i class="fas fa-map-marker-alt"></i> Brisbane, QLD</div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-1">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80" alt="Modern cafe fit-out" />
+          <div class="project-overlay">
+            <span class="project-category">Fit-Out</span>
+            <div class="project-name">Boutique Café Fit-Out</div>
+            <div class="project-location"><i class="fas fa-map-marker-alt"></i> Surry Hills, NSW</div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-2">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Bathroom renovation" />
+          <div class="project-overlay">
+            <span class="project-category">Renovation</span>
+            <div class="project-name">Luxury Ensuite Remodel</div>
+            <div class="project-location"><i class="fas fa-map-marker-alt"></i> Perth, WA</div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-3">
+          <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80" alt="Contemporary architecture build" />
+          <div class="project-overlay">
+            <span class="project-category">Construction</span>
+            <div class="project-name">Contemporary Family Home</div>
+            <div class="project-location"><i class="fas fa-map-marker-alt"></i> Adelaide, SA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-cta reveal">
+        <a href="projects.html" class="btn btn-dark btn-lg">
+          View All Projects <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ WHY CHOOSE US ============================ -->
+  <section class="section why-us" id="why-us">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Why Choose Us</span>
+        <h2>Built On Trust &amp; Quality</h2>
+        <p>Three pillars that have shaped every Gulzar Construction project.</p>
+        <div class="divider-bar"></div>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card reveal delay-1">
+          <div class="why-icon"><i class="fas fa-medal"></i></div>
+          <h3>Quality Craftsmanship</h3>
+          <p>Skilled tradesmen and premium materials.<br />Built to Australian standards, built to last.</p>
+        </div>
+
+        <div class="why-card reveal delay-2">
+          <div class="why-icon"><i class="fas fa-clock"></i></div>
+          <h3>On-Time Delivery</h3>
+          <p>Clear timelines and disciplined site management.<br />We respect your schedule and deadlines.</p>
+        </div>
+
+        <div class="why-card reveal delay-3">
+          <div class="why-icon"><i class="fas fa-tag"></i></div>
+          <h3>Transparent Pricing</h3>
+          <p>Detailed quotes with no hidden costs.<br />Honest pricing from day one to handover.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ TESTIMONIALS ============================ -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Testimonials</span>
+        <h2>What Our Clients Say</h2>
+        <p>Real feedback from homeowners and business owners across Australia.</p>
+        <div class="divider-bar"></div>
+      </div>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card reveal delay-1">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "Gulzar Construction transformed our 1970s home into a modern dream. The
+            craftsmanship is incredible and the team kept us informed every single day.
+            Highly recommend!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SM</div>
+            <div class="author-info">
+              <div class="name">Sarah Mitchell</div>
+              <div class="location">Sydney, NSW</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card reveal delay-2">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "We engaged Gulzar for our café fit-out and they delivered ahead of schedule.
+            Brilliant attention to detail and a genuinely professional crew from start to finish."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JT</div>
+            <div class="author-info">
+              <div class="name">James Thompson</div>
+              <div class="location">Melbourne, VIC</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card reveal delay-3">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "Best builders we've worked with — transparent pricing, beautiful carpentry,
+            and they finished our extension on budget. Five stars all the way."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">EW</div>
+            <div class="author-info">
+              <div class="name">Emily Walker</div>
+              <div class="location">Brisbane, QLD</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CTA BANNER ============================ -->
+  <section class="cta-banner reveal">
+    <div class="container">
+      <h2>Ready to Start Your Project?</h2>
+      <p>Contact us today for a FREE quote — no obligation, just honest advice.</p>
+      <a href="contact.html" class="btn btn-white btn-lg btn-pulse">
+        Get Your Free Quote <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="footer-logo" aria-label="Gulzar Construction home">
+            <img src="images/logo.png?v=10" alt="Gulzar Construction logo" />
+            <span class="logo-text">
+              <span class="logo-accent">GULZAR</span>
+              <span class="logo-rest">CONSTRUCTION</span>
+            </span>
+          </a>
+          <p class="footer-tagline">
+            Premium construction, renovation and fit-out services. Australian-owned and trusted
+            across the country.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="projects.html">Our Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul class="footer-list">
+            <li><a href="index.html#services">Carpentry</a></li>
+            <li><a href="index.html#services">Construction</a></li>
+            <li><a href="index.html#services">Renovation</a></li>
+            <li><a href="index.html#services">Fit-Outs</a></li>
+            <li><a href="contact.html">Free Quote</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-phone"></i> <span>(00) 0000 0000</span></li>
+            <li><i class="fas fa-envelope"></i> <span>info@gulzarconstruction.com.au</span></li>
+            <li><i class="fas fa-map-marker-alt"></i> <span>Based in Australia</span></li>
+            <li><i class="fas fa-clock"></i> <span>Mon–Fri 7:00am – 5:00pm AEST</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Gulzar Construction. All Rights Reserved. ABN: XX XXX XXX XXX
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#home" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js?v=2"></script>
+</body>
+</html>

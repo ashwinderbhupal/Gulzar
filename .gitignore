@@ -1,0 +1,29 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.vscode/
+.idea/
+.cursor/
+
+# Python helper scripts produce no output, but ignore any cached bytecode
+__pycache__/
+*.pyc
+
+# Node (in case you ever add a build step)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build / deployment
+dist/
+build/
+.vercel/
+.netlify/
+
+# Environment files (never commit secrets)
+.env
+.env.local
+*.env

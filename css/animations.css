@@ -1,0 +1,133 @@
+/* =========================================================
+   Gulzar Construction — Scroll Animations
+   All animations use Intersection Observer (see main.js)
+   ========================================================= */
+
+/* Base state: elements with .reveal start hidden */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Direction variations */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-zoom {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal-zoom.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Staggered delays — apply to children of a grid */
+.reveal.delay-1 { transition-delay: 0.1s; }
+.reveal.delay-2 { transition-delay: 0.2s; }
+.reveal.delay-3 { transition-delay: 0.3s; }
+.reveal.delay-4 { transition-delay: 0.4s; }
+.reveal.delay-5 { transition-delay: 0.5s; }
+.reveal.delay-6 { transition-delay: 0.6s; }
+
+/* Counter highlight effect when animating */
+.stat-number.counting {
+  color: var(--color-accent);
+  transition: color 0.3s ease;
+}
+
+/* Hero entrance — runs on page load (no observer needed) */
+.hero h1,
+.hero p,
+.hero-buttons {
+  opacity: 0;
+  animation: heroFadeUp 0.9s ease forwards;
+}
+
+.hero h1 { animation-delay: 0.25s; }
+.hero p { animation-delay: 0.5s; }
+.hero-buttons { animation-delay: 0.75s; }
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Banner entrance for inner pages */
+.page-banner h1,
+.page-banner .breadcrumb {
+  opacity: 0;
+  animation: bannerFade 0.8s ease forwards;
+}
+
+.page-banner h1 { animation-delay: 0.15s; }
+.page-banner .breadcrumb { animation-delay: 0.35s; }
+
+@keyframes bannerFade {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Pulse for CTA buttons */
+@keyframes subtlePulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(139, 94, 60, 0.4); }
+  50%      { box-shadow: 0 0 0 12px rgba(139, 94, 60, 0); }
+}
+
+.btn-pulse {
+  animation: subtlePulse 2.2s infinite;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-zoom {
+    opacity: 1;
+    transform: none;
+  }
+}
