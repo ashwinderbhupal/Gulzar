@@ -1,0 +1,36 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body { background: #000; color: #fff; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+::selection { background: #8B5E3C; color: #000; }
+
+/* -------- Responsive foundations -------- */
+
+/* Ensure images and media never overflow */
+img, video, svg { max-width: 100%; height: auto; }
+canvas { max-width: 100%; }
+
+/* Tap targets — minimum 44px on touch devices */
+@media (pointer: coarse) {
+  a, button, input, select, textarea {
+    min-height: 44px;
+  }
+}
+
+/* Small phones (≤ 380px) — tighter horizontal padding */
+@media (max-width: 380px) {
+  section, footer {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+/* Prevent horizontal overflow from any rogue element (body only — html overflow-x breaks position:sticky) */
+body {
+  max-width: 100vw;
+}
+
+/* Focus styles for accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid #8B5E3C;
+  outline-offset: 2px;
+}
