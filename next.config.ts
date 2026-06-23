@@ -1,13 +1,11 @@
 import type { NextConfig } from "next";
 
-// For GitHub Pages: set NEXT_PUBLIC_BASE_PATH=/repo-name in your environment
-// Leave empty for root domain or custom domain deployments
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: basePath || undefined,
-  assetPrefix: basePath || undefined,
+  basePath: isProd ? "/Gulzar" : "",
+  assetPrefix: isProd ? "/Gulzar" : "",
   images: { unoptimized: true },
 };
 

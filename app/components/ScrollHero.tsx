@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
  * getBoundingClientRect, per the brief.
  */
 const FRAME_COUNT = 192;
-const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const BASE = process.env.NODE_ENV === 'production' ? "/Gulzar" : "";
 
 const framePath = (i: number) =>
   `${BASE}/hero2-frames/frame_${String(i + 1).padStart(4, "0")}.jpg`;
